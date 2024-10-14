@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body{
+    background: #080808;
+}
+li{
+    list-style-type: none;
+    
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7vw;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+   
+}
+a:hover{
+    border-bottom: 3px solid #ff004f;
+    transition: border-bottom 0.5s ease;
+   
+}
+span{
+    color: #ff004f;
+    font-size: 4vw;
+    font-weight: 600;
+}
+header{
+    background-image: url(image/background.png);
+    background-size: cover;
+    height: 100vh;
+    /* background-position: fixed; */
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* .navbar .container{
+  
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+ }
+ .navlink{
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    gap: 3vw;
+ }
+
+ .Menu-icon{
+    display: none;
+   cursor: pointer;
+    font-size: 2vw;
+    color: #fff;
+    transition: color 0.5s ease;
+ }
+ .navlink:hover i{
+    color: #ff004f;
+ }
+ .logo{
+    color: #ff004f;
+    font-size: 4vw;
+    font-weight: 800;
+ }
+ 
+ .home{
+    color: #fff;
+    margin-top: 15%;
+ }
+ .home h1{
+    font-size: 4vw;
+    font-weight: 600;
+    margin-bottom: 5px;
+   
+ }
+ .home h3{
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-bottom: 30px;
+ }
+
+
+ /* --------------------------skills-----------------------------------------*/
+ section{
+   
+   margin-top: 80px;
+ }
+ 
+.skills {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+}
+
+ 
+ .skill{
+  width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+   background: #262626;
+   cursor: pointer;
+    box-shadow: 0 5px 10px #262626;
+    transition: background 0.5s ease;
+ }
+ .skill:hover{
+    transform: scale(1.08);
+   
+ }
+ .sub-title{
+    font-size: 3.5vw;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+   
+ }
+ .skill i{
+    font-size: 4vw;
+   margin-bottom: 2vw;
+    color: #ff004f;
+ }
+ .skill h3{
+    font-size: 2.7vw;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .skill p{
+    font-size: 1.5vw;
+    font-weight: 500;
+   
+ }
+ /* --------------------about---------- */
+ 
+ .about-me{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+ }
+ .col1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+ }
+ .col2 p{
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 1.5;
+  
+ }
+ .col2 h2{
+    color: #ff004f;
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 10vw;
+ }
+ /* --------------------------service---------------------------*/
+ .service-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+ }
+ .service{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background: #262626;
+    cursor: pointer;
+    box-shadow: 0 5px 10px #262626;
+    transition: background 0.5s ease;
+ }
+ .service:hover{
+    transform: scale(1.08);
+    background: #ff004f;
+   
+ }
+ .service h3{
+    font-size: 2.1vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+ }
+ .service p{
+    font-size: 1.5vw;
+    font-weight: 400;
+   
+ }
+ .service i{
+    font-size: 2.2vw;
+    margin-bottom: 10px;
+    color: #ff004f;
+ }
+ /* --------------------------project---------------------------*/
+ .project-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+ }
+ .project{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background: #262626;
+    cursor: pointer;
+    box-shadow: 0 5px 10px #262626;
+    transition: background 0.5s ease;
+ }
+ .project:hover{
+    transform: scale(1.04);
+    background: #ff004f;
+   
+ }
+ .project img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+   margin-bottom: 10px;
+ }
+ .project h3{
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .project p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+   
+ }
+ /* --------------------------contact---------------------------*/
+
+ .form-group {
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+   display: block;
+   margin: auto;
+   width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+textarea {
+    height: 8rem;
+}
+
+input[type="submit"] {
+    background-color: #ce0847; 
+    color: white;
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+   font-size: 1.4rem;
+  
+}
+
+input[type="submit"]:hover {
+    background-color: #ff004f;
+    
+}
+
+
+/* --------------------------footer---------------------------*/
+ footer{
+    background: #262626;
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+ }
+ footer p{
+    font-size: 1.3rem;
+ }
+  .social-icon {
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+    color: #867979;
+    display: flex;
+   align-items:center;
+    justify-content: center;
+    gap: 30px;
+ }
+ .social-icon i{
+    margin-top: 30px;
+    cursor: pointer;
+
+ }
+  .social-icon i:hover{
+    color: #ff004f;
+ }
+
+
+
+
+
+
+ /* Media Queries */
+
+
+ @media screen and (max-width: 608px) {
+    .logo {
+        font-size: 9vw;
+        font-weight: 800;
+        margin-top: 3vw;
+    }
+    .home h1, .home h3 {
+        font-size: 6vw;
+        font-weight: 600;
+    }
+    
+    span{
+        font-size: 6vw;
+    }
+   
+    .navlink {
+       display: none;
+       flex-direction: column;
+       position: absolute;
+       top: 60px;
+       left: 0;
+       background-color: #262626;
+       height: 100vh;
+       width: 100%;
+    
+       
+    }
+    .navlink.active{
+        display: flex;
+       
+    }
+    .navlink li{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .navlink li a{
+        color: #fff;
+        font-size: 6vw;
+        font-weight: 600;
+    
+    }
+     .Menu-icon {
+        display: block;
+        font-size: 6vw;
+
+    }
+    header{
+        background-image: url(image/phone-background.png);
+        background-size: cover;
+        background-position: right;
+    }
+    /* ==========skill======================= */
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    .skill{
+        padding: 10px 10px;
+     }
+     .sub-title{
+        font-size: 7vw;
+        margin-bottom: 30px;
+    }
+     .skill i{
+        font-size: 7vw;
+        margin-bottom: 1vw;
+    }
+     .skill h3{
+        font-size: 5vw;
+        margin-bottom: 5px;
+    }
+     .skill p{
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+    
+    /* ----------------------about-------------- */
+    .about-me{
+       display: flex;
+       gap: 0;
+       flex-direction: column;
+       
+    }
+    .col2 p{
+        font-size: 3.5vw;
+        font-weight: 400;
+        line-height: 1.5;
+       text-align: center;
+    }
+    .col2 h2{
+        font-size: 6vw;
+        font-weight: 600;
+        text-align: center;
+    }
+    /* -------------------------service--------------------------- */
+    .service-card{
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       gap: 25px;
+    }
+    .service{
+        padding: 15px 15px;
+     }
+     .service h3{
+        font-size: 5vw;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .service p{
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
+    .service i{
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+    /* -------------------------project--------------------------- */
+
+    .project-card{
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       gap: 30px;
+    }
+    
+    .project img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+       margin-bottom: 15px;
+    }
+    .project h3{
+        font-size: 5vw;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .project p{
+        font-size: 3.5vw;
+        font-weight: 400;
+
+    }
+    /* -------------------------contact--------------------------- */
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    input[type="submit"] {
+        background-color: #ce0847;
+        color: white;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+    }
+    input[type="submit"]:hover {
+        background-color: #ff004f;
+    }
+    .social-icon i{
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 9vw;
+    }
+    /* -------------------------footer--------------------------- */
+    footer p{
+        font-size: 4.5vw;
+
+    }
+
+ }
+  
+
